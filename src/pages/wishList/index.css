@@ -1,0 +1,481 @@
+/* Wishlist Page Styles */
+.wishlist-container {
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    min-height: 100vh;
+    padding: 24px;
+}
+
+.wishlist-header {
+    text-align: center;
+    margin-bottom: 32px;
+    padding: 24px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.wishlist-header .ant-typography {
+    margin: 0;
+}
+
+
+.actions-filters-card .ant-btn-primary {
+
+    background: #1890ff !important;
+}
+
+.wishlist-header .ant-typography h2 {
+    background: linear-gradient(135deg, #ff4d4f 0%, #ff7875 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: 700;
+}
+
+.ant-pagination-item-active {
+    background-color: white !important;
+    background: black;
+    border: rgb(43, 43, 43) !important;
+}
+
+.actions-filters-card .ant-input {
+
+    border-radius: 0 !important;
+    border: white !important;
+
+}
+
+.stats-cards {
+    margin-bottom: 24px;
+}
+
+.stats-cards .ant-card {
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    border: none;
+}
+
+.stats-cards .ant-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+.stats-cards .ant-statistic-title {
+    color: #666;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.stats-cards .ant-statistic-content {
+    color: #1890ff;
+    font-weight: 600;
+}
+
+.budget-progress-card {
+    margin-bottom: 24px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border: none;
+}
+
+.budget-progress-card .ant-progress-text {
+    font-weight: 600;
+    color: #1890ff;
+}
+
+.actions-filters-card {
+    margin-bottom: 24px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border: none;
+}
+
+.actions-filters-card .ant-btn-primary {
+    background: linear-gradient(135deg, #ff4d4f 0%, #ff7875 100%);
+    border: none;
+    border-radius: 8px;
+    height: 40px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.actions-filters-card .ant-btn-primary:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(255, 77, 79, 0.3);
+}
+
+.actions-filters-card .ant-input {
+    border-radius: 8px;
+    border: 1px solid #d9d9d9;
+    transition: all 0.3s ease;
+}
+
+.actions-filters-card .ant-input:focus,
+.actions-filters-card .ant-input:hover {
+    border-color: #ff4d4f;
+    box-shadow: 0 0 0 2px rgba(255, 77, 79, 0.2);
+}
+
+.actions-filters-card .ant-select {
+    border-radius: 8px;
+}
+
+.actions-filters-card .ant-select:not(.ant-select-disabled):hover .ant-select-selector {
+    border-color: #ff4d4f;
+}
+
+.wishlist-table-card {
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border: none;
+}
+
+.wishlist-table-card .ant-table {
+    border-radius: 8px;
+}
+
+.wishlist-table-card .ant-table-thead>tr>th {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    border-bottom: 2px solid #dee2e6;
+    font-weight: 600;
+    color: #495057;
+}
+
+.wishlist-table-card .ant-table-tbody>tr:hover>td {
+    background: #f8f9fa;
+}
+
+.wishlist-table-card .ant-table-tbody>tr>td {
+    border-bottom: 1px solid #f0f0f0;
+    padding: 16px 12px;
+}
+
+/* Priority Tags */
+.ant-tag {
+    border-radius: 6px;
+    font-weight: 500;
+    padding: 4px 8px;
+    border: none;
+}
+
+.ant-tag[color="green"] {
+    background: #f6ffed;
+    color: #52c41a;
+    border: 1px solid #b7eb8f;
+}
+
+.ant-tag[color="orange"] {
+    background: #fff7e6;
+    color: #fa8c16;
+    border: 1px solid #ffd591;
+}
+
+.ant-tag[color="red"] {
+    background: #fff2f0;
+    color: #ff4d4f;
+    border: 1px solid #ffccc7;
+}
+
+.ant-tag[color="purple"] {
+    background: #f9f0ff;
+    color: #722ed1;
+    border: 1px solid #d3adf7;
+}
+
+.ant-tag[color="blue"] {
+    background: #e6f7ff;
+    color: #1890ff;
+    border: 1px solid #91d5ff;
+}
+
+/* Action Buttons */
+.action-buttons .ant-btn {
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+.action-buttons .ant-btn:hover {
+    transform: translateY(-1px);
+}
+
+.action-buttons .ant-btn-text {
+    color: #1890ff;
+}
+
+.action-buttons .ant-btn-text:hover {
+    background: #e6f7ff;
+    color: #40a9ff;
+}
+
+.action-buttons .ant-btn-danger.ant-btn-text:hover {
+    background: #fff2f0;
+    color: #ff7875;
+}
+
+/* Modal Styles */
+.ant-modal {
+    border-radius: 12px;
+}
+
+.ant-modal-header {
+    border-radius: 12px 12px 0 0;
+    background: linear-gradient(135deg, #ff4d4f 0%, #ff7875 100%);
+    border-bottom: none;
+}
+
+.ant-modal-title {
+    color: white;
+    font-weight: 600;
+}
+
+.ant-modal-close {
+    color: white;
+}
+
+.ant-modal-close:hover {
+    color: #f0f0f0;
+}
+
+.ant-modal-body {
+    padding: 24px;
+}
+
+.ant-modal-footer {
+    border-top: 1px solid #f0f0f0;
+    padding: 16px 24px;
+}
+
+/* Form Styles */
+.ant-form-item-label>label {
+    font-weight: 500;
+    color: #262626;
+}
+
+.ant-input,
+.ant-input-number,
+.ant-select-selector,
+.ant-picker {
+    border-radius: 8px;
+    border: 1px solid #d9d9d9;
+    transition: all 0.3s ease;
+}
+
+.ant-input:focus,
+.ant-input-number:focus,
+.ant-select-focused .ant-select-selector,
+.ant-picker-focused {
+    border-color: #ff4d4f;
+    box-shadow: 0 0 0 2px rgba(255, 77, 79, 0.2);
+}
+
+.ant-textarea {
+    border-radius: 8px;
+    border: 1px solid #d9d9d9;
+    transition: all 0.3s ease;
+}
+
+.ant-textarea:focus,
+.ant-textarea:hover {
+    border-color: #ff4d4f;
+    box-shadow: 0 0 0 2px rgba(255, 77, 79, 0.2);
+}
+
+/* Empty State */
+.ant-empty {
+    padding: 48px 0;
+}
+
+.ant-empty-description {
+    color: #8c8c8c;
+    font-size: 16px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .wishlist-container {
+        padding: 16px;
+    }
+
+    .wishlist-header {
+        padding: 16px;
+        margin-bottom: 24px;
+    }
+
+    .stats-cards .ant-col {
+        margin-bottom: 16px;
+    }
+
+    .actions-filters-card .ant-row {
+        margin-bottom: 16px;
+    }
+
+    .actions-filters-card .ant-col {
+        margin-bottom: 12px;
+    }
+
+    .wishlist-table-card {
+        overflow-x: auto;
+    }
+
+    .ant-table {
+        font-size: 12px;
+    }
+
+    .ant-table-thead>tr>th,
+    .ant-table-tbody>tr>td {
+        padding: 8px 6px;
+    }
+}
+
+@media (max-width: 576px) {
+    .wishlist-header .ant-typography h2 {
+        font-size: 24px;
+    }
+
+    .stats-cards .ant-statistic-title {
+        font-size: 12px;
+    }
+
+    .stats-cards .ant-statistic-content {
+        font-size: 20px;
+    }
+
+    .actions-filters-card .ant-btn {
+        height: 36px;
+        font-size: 14px;
+    }
+}
+
+/* Animation Classes */
+.fade-in {
+    animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.slide-up {
+    animation: slideUp 0.3s ease-out;
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Custom Scrollbar */
+.wishlist-container::-webkit-scrollbar {
+    width: 8px;
+}
+
+.wishlist-container::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 4px;
+}
+
+.wishlist-container::-webkit-scrollbar-thumb {
+    background: #c1c1c1;
+    border-radius: 4px;
+}
+
+.wishlist-container::-webkit-scrollbar-thumb:hover {
+    background: #a8a8a8;
+}
+
+/* Loading States */
+.ant-spin-dot-item {
+    background-color: #ff4d4f;
+}
+
+.ant-spin-text {
+    color: #ff4d4f;
+    font-weight: 500;
+}
+
+/* Success/Error Messages */
+.ant-message-notice-content {
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.ant-message-success .ant-message-notice-content {
+    background: #f6ffed;
+    border: 1px solid #b7eb8f;
+}
+
+.ant-message-error .ant-message-notice-content {
+    background: #fff2f0;
+    border: 1px solid #ffccc7;
+}
+
+/* Tooltip Styles */
+.ant-tooltip-inner {
+    border-radius: 6px;
+    font-size: 12px;
+}
+
+/* Popconfirm Styles */
+.ant-popover-inner {
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.ant-popover-title {
+    font-weight: 600;
+    color: #262626;
+}
+
+.ant-popover-message {
+    color: #595959;
+}
+
+/* Pagination Styles */
+.ant-pagination-item {
+    border-radius: 6px;
+    border: 1px solid #d9d9d9;
+    transition: all 0.3s ease;
+}
+
+.ant-pagination-item:hover {
+    border-color: #ff4d4f;
+    color: #ff4d4f;
+}
+
+.ant-pagination-item-active {
+    border-color: #ff4d4f;
+    background: #ff4d4f;
+}
+
+.ant-pagination-item-active a {
+    color: white;
+}
+
+.ant-pagination-prev,
+.ant-pagination-next {
+    border-radius: 6px;
+    border: 1px solid #d9d9d9;
+    transition: all 0.3s ease;
+}
+
+.ant-pagination-prev:hover,
+.ant-pagination-next:hover {
+    border-color: #ff4d4f;
+    color: #ff4d4f;
+}

@@ -1,0 +1,32 @@
+.ui-user-filter-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ui-user-filter-header-right{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.ui-product-description{
+    position: relative;
+}
+
+.ui-product-description-row{
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    margin: 10px 10px;
+}
+
+
+@media screen and (max-width: 1048px) {
+    .ui-user-filter-header{
+        flex-direction: column;
+        align-items: flex-start;
+        row-gap: 15px;
+    }
+}

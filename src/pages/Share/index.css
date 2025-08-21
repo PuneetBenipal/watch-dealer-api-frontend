@@ -1,0 +1,210 @@
+/* Share Page Styles */
+.share_page {
+    min-height: 100vh;
+    background: #f5f5f5;
+}
+
+/* Sticky Layout Styles */
+.share-container {
+    position: relative;
+    min-height: 100vh;
+}
+
+.sticky-image-section {
+    position: sticky;
+    top: 24px;
+    height: fit-content;
+    z-index: 10;
+}
+
+.sticky-details-section {
+    position: sticky;
+    top: 24px;
+    height: fit-content;
+    z-index: 10;
+}
+
+/* Ensure proper spacing for sticky elements */
+@media (min-width: 992px) {
+    .sticky-image-section,
+    .sticky-details-section {
+        top: 24px;
+    }
+}
+
+@media (max-width: 991px) {
+    .sticky-image-section,
+    .sticky-details-section {
+        position: relative;
+        top: auto;
+    }
+}
+
+/* Image Modal Centering - Fixed selectors */
+.ant-image-preview-mask {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+.ant-image-preview-wrap {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+.ant-image-preview-img {
+    max-width: 90vw !important;
+    max-height: 90vh !important;
+    object-fit: contain !important;
+    margin: auto !important;
+}
+
+/* Fix for modal closing issue */
+.ant-image-preview-close {
+    z-index: 1001 !important;
+}
+
+.ant-image-preview-operations {
+    z-index: 1001 !important;
+}
+
+/* Ensure proper modal behavior */
+.ant-image-preview-root {
+    z-index: 1000 !important;
+}
+
+/* Product Image Container */
+.product-image-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.product-image-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.ant-image-preview-img-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.product-image-container img:hover {
+    transform: scale(1.02);
+}
+
+/* Additional Images Grid */
+.images-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+    gap: 8px;
+    margin-top: 8px;
+}
+
+.images-grid img {
+    width: 100%;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.images-grid img:hover {
+    transform: scale(1.05);
+}
+
+/* Contact Form Styles */
+.contact-form {
+    background: #fafafa;
+    padding: 24px;
+    border-radius: 8px;
+    border: 1px solid #f0f0f0;
+}
+
+/* WhatsApp Contact Styles */
+.whatsapp-section {
+    margin-top: 16px;
+}
+
+.whatsapp-button {
+    background: #25D366 !important;
+    border-color: #25D366 !important;
+    transition: all 0.3s ease;
+}
+
+.whatsapp-button:hover {
+    background: #128C7E !important;
+    border-color: #128C7E !important;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(37, 211, 102, 0.3);
+}
+
+.whatsapp-unavailable {
+    background: #f5f5f5;
+    border: 1px solid #e8e8e8;
+    border-radius: 6px;
+    padding: 16px;
+    text-align: center;
+    color: #666;
+}
+
+.contact-form .ant-form-item-label > label {
+    font-weight: 600;
+    color: #262626;
+}
+
+.contact-form .ant-input,
+.contact-form .ant-input-textarea {
+    border-radius: 6px;
+    border: 1px solid #d9d9d9;
+    transition: all 0.3s ease;
+}
+
+.contact-form .ant-input:focus,
+.contact-form .ant-input-textarea:focus,
+.contact-form .ant-input:hover,
+.contact-form .ant-input-textarea:hover {
+    border-color: #1890ff;
+    box-shadow: 0 0 0 2px rgba(24, 144, 255, 0.1);
+}
+
+.contact-form .ant-btn-primary {
+    height: 48px;
+    border-radius: 6px;
+    font-weight: 600;
+    background: linear-gradient(135deg, #1890ff 0%, #096dd9 100%);
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.contact-form .ant-btn-primary:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(24, 144, 255, 0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .ant-image-preview-img {
+        max-width: 95vw;
+        max-height: 95vh;
+    }
+    
+    .images-grid {
+        grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
+    }
+    
+    .images-grid img {
+        height: 60px;
+    }
+    
+    .contact-form {
+        padding: 16px;
+    }
+}

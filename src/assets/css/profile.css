@@ -1,0 +1,143 @@
+/* Import base styles */
+@import './base.css';
+
+/* Profile-specific styles */
+.profile-container {
+  padding: var(--spacing-xl);
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.profile-grid {
+  display: flex;
+  gap: var(--spacing-xl);
+  width: 100%;
+}
+
+.profile-grid__left {
+  flex: 0 0 33.333%;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-lg);
+}
+
+.profile-grid__right {
+  flex: 0 0 66.667%;
+}
+
+.user-summary {
+  text-align: center;
+}
+
+.user-summary__avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: var(--primary-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto var(--spacing-lg);
+  box-shadow: var(--shadow-medium);
+}
+
+.user-summary__avatar-icon {
+  font-size: 50px !important;
+  color: white !important;
+}
+
+.user-summary__name {
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--text-primary);
+  margin-bottom: var(--spacing-sm);
+}
+
+.user-summary__email {
+  font-size: var(--font-size-base);
+  color: var(--text-primary);
+  margin-bottom: var(--spacing-lg);
+}
+
+.user-summary__role {
+  background-color: var(--secondary-color);
+  color: white;
+  padding: var(--spacing-xs) var(--spacing-md);
+  border-radius: 16px;
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-medium);
+  display: inline-block;
+  margin-bottom: var(--spacing-xl);
+}
+
+.account-info__item {
+  margin-bottom: var(--spacing-lg);
+}
+
+.account-info__label {
+  color: var(--text-secondary);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+  margin-bottom: var(--spacing-xs);
+}
+
+.account-info__value {
+  font-weight: var(--font-weight-medium);
+  color: var(--text-primary);
+  font-size: var(--font-size-base);
+}
+
+.form-group__input--textarea.bio {
+  min-height: 120px;
+}
+
+/* Password Dialog Specific Styles */
+.password-input-wrapper {
+  position: relative;
+}
+
+.password-toggle {
+  position: absolute;
+  right: var(--spacing-md);
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--text-secondary);
+  padding: 0;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.3s ease;
+}
+
+.password-toggle:hover {
+  color: var(--text-primary);
+}
+
+.password-toggle svg {
+  font-size: 1.2rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .profile-grid {
+    flex-direction: column;
+  }
+  
+  .profile-grid__left,
+  .profile-grid__right {
+    flex: 1;
+  }
+  
+  .profile-container {
+    padding: var(--spacing-md);
+  }
+  
+  .card {
+    padding: var(--spacing-lg);
+  }
+}
