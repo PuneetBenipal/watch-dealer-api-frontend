@@ -70,13 +70,13 @@ export const useAuth = () => {
         }
     };
 
-    const registerAdmin = async (email, password, fullName, adminCode) => {
+    const registerAdmin = async (email, password, fullName, superAdminCode) => {
         try {
             const response = await API.post('/api/auth/super-admin/register', {
                 email,
                 password,
                 fullName,
-                adminCode
+                superAdminCode,
             });
             const { token, user: userData } = response.data;
 
