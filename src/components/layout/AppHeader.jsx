@@ -17,7 +17,9 @@ import {
     ProfileOutlined,
     CreditCardOutlined,
     UserAddOutlined,
-    ChromeOutlined
+    ChromeOutlined,
+    SafetyOutlined,
+    ExclamationCircleOutlined
 } from "@ant-design/icons";
 import { useAuth } from "../../hooks/useAuth"; // <-- your hook
 
@@ -246,6 +248,28 @@ export default function AppHeader() {
                                         </SubMenu>
                                     )}
 
+                                    {canEscrow && (
+                                        <SubMenu key="escrow" icon={<SafetyOutlined />} title="Escrow Services">
+                                            <MenuItem key="escrow-transactions">
+                                                <Link to="/escrow/transactions">All Transactions</Link>
+                                            </MenuItem>
+                                            <MenuItem key="escrow-create">
+                                                <Link to="/escrow/create">Create Escrow</Link>
+                                            </MenuItem>
+                                        </SubMenu>
+                                    )}
+
+                                    {canDisputes && (
+                                        <SubMenu key="disputes" icon={<ExclamationCircleOutlined />} title="Disputes">
+                                            <MenuItem key="disputes-list">
+                                                <Link to="/disputes">All Disputes</Link>
+                                            </MenuItem>
+                                            <MenuItem key="disputes-create">
+                                                <Link to="/disputes/create">File Dispute</Link>
+                                            </MenuItem>
+                                        </SubMenu>
+                                    )}
+
                                     <SubMenu key="crm" icon={<TeamOutlined />} title="CRM">
                                         <MenuItem key="crm-customers">
                                             <Link to="/crm/customers">Customers</Link>
@@ -293,6 +317,9 @@ export default function AppHeader() {
                                                 <Link to="/account/billing">Billing History</Link>
                                             </MenuItem>
                                         )}
+                                        <MenuItem key="account-api">
+                                            <Link to="/account/api">API Settings</Link>
+                                        </MenuItem>
 
                                     </SubMenu>
 

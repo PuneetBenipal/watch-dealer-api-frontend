@@ -3,8 +3,8 @@ import { Tabs } from 'antd';
 
 import Profile from './Profile';
 import TeamPage from './TeamPage';
-import AccountPlanPage from './Plan_1';
-import BillingPage from './Billing/v1';
+import AccountPlanPage from './Plan';
+import BillingPage from './BillingPage';
 
 const Account = () => {
     return (

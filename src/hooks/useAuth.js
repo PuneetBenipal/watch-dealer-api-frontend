@@ -30,9 +30,15 @@ export const useAuth = () => {
             localStorage.setItem('token', token);
             setAuth(token);
 
-            return CustomToast("success", "Login is Successful");
+            CustomToast("success", "Login is Successful");
+            
+            // Redirect to dashboard after successful login
+            window.location.href = '/dashboard';
+            
+            return { success: true, user: userData };
         } catch (error) {
-            CustomToast("error", error.response?.data?.msg)
+            CustomToast("error", error.response?.data?.msg);
+            return { success: false, error: error.response?.data?.msg };
         }
     };
 
