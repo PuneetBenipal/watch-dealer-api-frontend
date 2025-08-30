@@ -80,6 +80,7 @@ import AlertsPage from './pages/AlertsPage.jsx';
 import InsightsPage from './pages/InsightsPage.jsx';
 import ApiSettings from './pages/account/ApiSettings';
 import Account from './pages/account';
+import DealerInventory from './pages/inventory/DealerInventory';
 
 
 function DocArticleRoute() {
@@ -120,13 +121,13 @@ function App() {
                                 <Route path="/whatsapp/want" element={<ProtectedRoute><Wantbuy /></ProtectedRoute>} />
 
                                 {/* Inventory Manager Module - Protected */}
-                                <Route path="/inventory" element={<ProtectedRoute><InventoryManagement /></ProtectedRoute>} />
-                                <Route path="/inventory/list" element={<ProtectedRoute><InventoryManagement /></ProtectedRoute>} />
-                                <Route path="/inventory/add" element={<ProtectedRoute><InventoryManagement /></ProtectedRoute>} />
-                                <Route path="/inventory/upload" element={<ProtectedRoute><InventoryManagement /></ProtectedRoute>} />
-                                <Route path="/inventory/images" element={<ProtectedRoute><InventoryManagement /></ProtectedRoute>} />
-                                <Route path="/inventory/share" element={<ProtectedRoute><InventoryManagement /></ProtectedRoute>} />
-                                <Route path="/inventory/watch/:id" element={<ProtectedRoute><InventoryManagement /></ProtectedRoute>} />
+                                <Route path="/inventory" element={<ProtectedRoute><DealerInventory /></ProtectedRoute>} />
+                                <Route path="/inventory/list" element={<ProtectedRoute><DealerInventory /></ProtectedRoute>} />
+                                <Route path="/inventory/add" element={<ProtectedRoute><DealerInventory /></ProtectedRoute>} />
+                                <Route path="/inventory/upload" element={<ProtectedRoute><DealerInventory /></ProtectedRoute>} />
+                                <Route path="/inventory/images" element={<ProtectedRoute><DealerInventory /></ProtectedRoute>} />
+                                <Route path="/inventory/share" element={<ProtectedRoute><DealerInventory /></ProtectedRoute>} />
+                                <Route path="/inventory/watch/:id" element={<ProtectedRoute><DealerInventory /></ProtectedRoute>} />
                                 <Route path="/inventory/wishlist" element={<ProtectedRoute><WishList /></ProtectedRoute>} />
                                 <Route path="/inventory/share/:token" element={<Share />} />
                                 <Route path="/share/:token" element={<Share />} />
